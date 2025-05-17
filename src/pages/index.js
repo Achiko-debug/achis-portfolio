@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -8,7 +9,7 @@ export default function Home() {
       <Header />
       <main className="min-h-[80vh] flex flex-col items-center justify-center bg-gradient-to-b from-slate-100 via-slate-200 to-slate-100 px-4">
         <div className="w-full max-w-2xl mx-auto py-20 flex flex-col items-center justify-center animate-fadeIn">
-          {/* სახელი — hover-ზე მსუბუქი ჩრდილი */}
+          {/* სახელი */}
           <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight transition-all duration-300 hover:text-blue-700 hover:drop-shadow-xl cursor-pointer">
             აჩიკო ბუაძე
           </h1>
@@ -18,7 +19,7 @@ export default function Home() {
             განათლებისა და ციფრული განვითარების სპეციალისტი
           </h2>
 
-          {/* უნარები/ღირებულებები - ჩიპებად (badge) */}
+          {/* უნარები/ღირებულებები */}
           <div className="flex flex-wrap gap-3 justify-center mb-8">
             <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-lg font-semibold shadow-sm text-base">
               ინოვატორი
@@ -42,12 +43,12 @@ export default function Home() {
           </p>
 
           {/* ეფექტური ღილაკი */}
-          <a
+          <Link
             href="/projects"
             className="mt-8 px-8 py-2 rounded-md bg-blue-700 hover:bg-blue-800 text-white font-semibold shadow-lg transition-transform duration-200 hover:scale-105 text-base"
           >
             იხილეთ პროექტები
-          </a>
+          </Link>
 
           {/* CTA ქვესათაური */}
           <div className="mt-10 text-base text-blue-800 font-medium text-center animate-fadeIn delay-600">
